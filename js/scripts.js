@@ -131,8 +131,8 @@ $(document).ready(function(){
   function showAccellix(){
     const title = "Accellix";
     const logo = "images/buy4baby-1.png";
-    const bio = "ffffffffffffffffff";
-    const technologies = "Sqlite, Firebase: Auth,storage, realtime database ++, Async";
+    const bio = "Accellix is an advanced automated flow cytometer which does high speed blood tests and analyzes the results.The android app, along with a dll built in C# for connecting the device to the cloud, allows the device handlers (which i was at the time), to monitor all the tests run on the device, detect bugs, and easily manage the device remotely. instead of asking the users to do all kinds of actions and using a team viewer everytime something had to be done.";
+    const technologies = "Android studio, Java, Firebase realtime database,Authentication, Async timers";
     const mainImage = "images/galaxy.jpg";
     const link = "NA";
 
