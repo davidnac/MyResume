@@ -64,7 +64,7 @@ $(document).ready(function(){
   function showDiveLog(){
     const title = "Dive log";
     const logo = "images/buy4baby-1.png";
-    const bio = "ffffffffffffffffff";
+    const bio = "Dive log book allows you to keep your records & diving certifications with you at all times.It has many features including: Digital dive log book - including field to record Marine life spotted on dive (Something i haven't seen, in most dive log apps), Easily copy & edit dives, for fast input, Dive Certifications log, View all your dive sites on a map, Export dive log to PDF & Excel, get detailed statistics.";
     const technologies = "Android studio, Java, Sqlie, Google maps SDK, Location API, Excel with Apache POI, PDF generation, Google drive sdk, Firebase Crashlytics, Camera & images.";
     const mainImage = "images/galaxy.jpg";
     const link = "https://play.google.com/store/apps/details?id=com.david.divelog";
@@ -108,7 +108,7 @@ $(document).ready(function(){
   function showMorseTranslator(){
     const title = "Morse Translator(";
     const logo = "images/buy4baby-1.png";
-    const bio = "ffffffffffffffffff";
+    const bio = "Everything you ever wanted from a Morse code translator app! Translate Morse code to  many different languages, including English, Russian, Greek, Japanese, Korean,Hebrew, Arabic, Persian, Number and Punctuation marks! features include: Real time translation - no need for annoying button click every time, Text to Morse Auto detect - no need to select language, Transmit Morse code using sound, flash, device screen brightness & vibration, Text to speech to read translations, Speech to text to dictate words for translation, Real time translation from text to Morse code or vice versa, Save codes for fast future lookup, Share your translations, Customize dot & dash with custom symbols of your choosing.";
     const technologies = "Android studio, Java, Kotlin, Room sqlite, MVVM Architecture, Async, Firebase Crashlytics, CameraX API,  In app purchase";
     const mainImage = "images/galaxy.jpg";
     const link = "https://play.google.com/store/apps/details?id=com.david.morsetranslator";
