@@ -97,7 +97,7 @@ $(document).ready(function(){
   function showBarcodeReader(){
     const title = "Barcode reader";
     const logo = "images/buy4baby-1.png";
-    const bio = "ffffffffffffffffff";
+    const bio = "QR & Barcode scanner which support all the common formats with Instant scanning and decoding, Scan from camera or image in your gallery. Scan history, Create all types of QR code and save them to your device as an image, or have them stored in the app's history tab.";
     const technologies = "Sqlite, Firebase: Auth,storage, realtime database ++, Async";
     const mainImage = "images/galaxy.jpg";
     const link = "https://play.google.com/store/apps/details?id=com.davidnac.barcodereader";
@@ -142,7 +142,7 @@ $(document).ready(function(){
   function showBuy4babyAndroid(){
     const title = "Buy4baby";
     const logo = "images/buy4baby-1.png";
-    const bio = "ffffffffffffffffff";
+    const bio = "a social store where you can sell/give and buy many kinds of new or used products such as: clothing, footwear, textile, strollers, toys and more. The application allows you to view products other users have uploaded and contact them easily. Find exactly what you are looking for, using a smart search and advanced filter options.Create a wishlist, and keep track of what you need and get notified when an item you are looking for is uploaded by another user.";
     const technologies = "Sqlite, Firebase: Auth,storage, realtime database ++, Async";
     const mainImage = "images/galaxy.jpg";
     const link = "https://play.google.com/store/apps/details?id=com.david.mybaby";
@@ -153,7 +153,7 @@ $(document).ready(function(){
   function showBuy4babyIos(){
     const title = "Buy4baby";
     const logo = "images/buy4baby-1.png";
-    const bio = "ffffffffffffffffff";
+    const bio = "a social store where you can sell/give and buy many kinds of new or used products such as: clothing, footwear, textile, strollers, toys and more. The application allows you to view products other users have uploaded and contact them easily. Find exactly what you are looking for, using a smart search and advanced filter options.Create a wishlist, and keep track of what you need and get notified when an item you are looking for is uploaded by another user.";
     const technologies = "Sqlite, Firebase: Auth,storage, realtime database ++, Async";
     const mainImage = "images/galaxy.jpg";
     const link = "https://apps.apple.com/us/app/buy4baby/id1474004620";
@@ -164,7 +164,7 @@ $(document).ready(function(){
   function showBuy4babyWeb(){
     const title = "Buy4baby";
     const logo = "images/buy4baby-1.png";
-    const bio = "ffffffffffffffffff";
+    const bio = "a social store where you can sell/give and buy many kinds of new or used products such as: clothing, footwear, textile, strollers, toys and more. The application allows you to view products other users have uploaded and contact them easily. Find exactly what you are looking for, using a smart search and advanced filter options.Create a wishlist, and keep track of what you need and get notified when an item you are looking for is uploaded by another user.";
     const technologies = "Sqlite, Firebase: Auth,storage, realtime database ++, Async";
     const mainImage = "images/galaxy.jpg";
     const link = "www.buy4baby.co.il";
