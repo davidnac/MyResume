@@ -65,7 +65,7 @@ $(document).ready(function(){
     const title = "Dive log";
     const logo = "images/buy4baby-1.png";
     const bio = "ffffffffffffffffff";
-    const technologies = "Sqlite, Firebase: Auth,storage, realtime database ++, Async";
+    const technologies = "Android studio, Java, Sqlie, Google maps SDK, Location API, Excel with Apache POI, PDF generation, Google drive sdk, Firebase Crashlytics, Camera & images.";
     const mainImage = "images/galaxy.jpg";
     const link = "https://play.google.com/store/apps/details?id=com.david.divelog";
 
@@ -76,7 +76,7 @@ $(document).ready(function(){
     const title = "Dive planner";
     const logo = "images/buy4baby-1.png";
     const bio = "ffffffffffffffffff";
-    const technologies = "Sqlite, Firebase: Auth,storage, realtime database ++, Async";
+    const technologies = "Android studio, Java, Sqlie, Async, Google drive sdk, Firebase Crashlytics & Auth.";
     const mainImage = "images/galaxy.jpg";
     const link = "https://play.google.com/store/apps/details?id=com.davidnac.diveplanner";
 
@@ -87,7 +87,7 @@ $(document).ready(function(){
     const title = "TTS Reader";
     const logo = "images/buy4baby-1.png";
     const bio = "ffffffffffffffffff";
-    const technologies = "Sqlite, Firebase: Auth,storage, realtime database ++, Async";
+    const technologies = "Android studio, Java, Sqlie, Async, Text to speech API, Firebase Crashlytics, Google vision API (text recognition), In app purchase API.";
     const mainImage = "images/galaxy.jpg";
     const link = "https://play.google.com/store/apps/details?id=com.davidnac.ttsreaderfree";
 
@@ -109,7 +109,7 @@ $(document).ready(function(){
     const title = "Morse Translator(";
     const logo = "images/buy4baby-1.png";
     const bio = "ffffffffffffffffff";
-    const technologies = "Sqlite, Firebase: Auth,storage, realtime database ++, Async";
+    const technologies = "Android studio, Java, Kotlin, Room sqlite, MVVM Architecture, Async, Firebase Crashlytics, CameraX API,  In app purchase";
     const mainImage = "images/galaxy.jpg";
     const link = "https://play.google.com/store/apps/details?id=com.david.morsetranslator";
 
