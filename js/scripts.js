@@ -75,7 +75,7 @@ $(document).ready(function(){
   function showDivePlanner(){
     const title = "Dive planner";
     const logo = "images/dive_planner_logo.png";
-    const bio = "ffffffffffffffffff";
+    const bio = "Dive planner for recreational diving that aims to replace the tedious planning with paper dive tables, and automates the planning process, plus many other extras.";
     const technologies = "Android studio, Java, Sqlie, Async, Google drive sdk, Firebase Crashlytics & Auth.";
     const mainImage = "images/galaxy.jpg";
     const link = "https://play.google.com/store/apps/details?id=com.davidnac.diveplanner";
@@ -86,7 +86,7 @@ $(document).ready(function(){
   function showTtsReader(){
     const title = "TTS Reader";
     const logo = "images/tts_reader_logo.png";
-    const bio = "ffffffffffffffffff";
+    const bio = "TTS Reader allows users to have any text read out to you simply by marking it and copying it to the clipboard or by sharing text or a webpage to the app. It also incorporates OCR technology for identifying text and reading straight away or saves it for later. ";
     const technologies = "Android studio, Java, Sqlie, Async, Text to speech API, Firebase Crashlytics, Google vision API (text recognition), In app purchase API.";
     const mainImage = "images/galaxy.jpg";
     const link = "https://play.google.com/store/apps/details?id=com.davidnac.ttsreaderfree";
