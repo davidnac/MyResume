@@ -495,3 +495,12 @@ h1, .h1 {
     font-size: 15px;;
   }
 
+/*-----------JAVASCRIPT SCROLL SPY----------------------*/
+
+.active {
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  line-height: 50px;
+}
+
