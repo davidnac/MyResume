@@ -63,7 +63,7 @@ $(document).ready(function(){
 
   function showDiveLog(){
     const title = "Dive log";
-    const logo = "images/buy4baby-1.png";
+    const logo = "images/dive_log_logo.png";
     const bio = "Dive log book allows you to keep your records & diving certifications with you at all times.It has many features including: Digital dive log book - including field to record Marine life spotted on dive (Something i haven't seen, in most dive log apps), Easily copy & edit dives, for fast input, Dive Certifications log, View all your dive sites on a map, Export dive log to PDF & Excel, get detailed statistics.";
     const technologies = "Android studio, Java, Sqlie, Google maps SDK, Location API, Excel with Apache POI, PDF generation, Google drive sdk, Firebase Crashlytics, Camera & images.";
     const mainImage = "images/galaxy.jpg";
@@ -74,7 +74,7 @@ $(document).ready(function(){
 
   function showDivePlanner(){
     const title = "Dive planner";
-    const logo = "images/buy4baby-1.png";
+    const logo = "images/dive_planner_logo.png";
     const bio = "ffffffffffffffffff";
     const technologies = "Android studio, Java, Sqlie, Async, Google drive sdk, Firebase Crashlytics & Auth.";
     const mainImage = "images/galaxy.jpg";
@@ -85,7 +85,7 @@ $(document).ready(function(){
 
   function showTtsReader(){
     const title = "TTS Reader";
-    const logo = "images/buy4baby-1.png";
+    const logo = "images/tts_reader_logo.png";
     const bio = "ffffffffffffffffff";
     const technologies = "Android studio, Java, Sqlie, Async, Text to speech API, Firebase Crashlytics, Google vision API (text recognition), In app purchase API.";
     const mainImage = "images/galaxy.jpg";
@@ -96,7 +96,7 @@ $(document).ready(function(){
 
   function showBarcodeReader(){
     const title = "Barcode reader";
-    const logo = "images/buy4baby-1.png";
+    const logo = "images/barcode_reader_logo.png";
     const bio = "QR & Barcode scanner which support all the common formats with Instant scanning and decoding, Scan from camera or image in your gallery. Scan history, Create all types of QR code and save them to your device as an image, or have them stored in the app's history tab.";
     const technologies = "Sqlite, Firebase: Auth,storage, realtime database ++, Async";
     const mainImage = "images/galaxy.jpg";
@@ -107,7 +107,7 @@ $(document).ready(function(){
 
   function showMorseTranslator(){
     const title = "Morse Translator(";
-    const logo = "images/buy4baby-1.png";
+    const logo = "images/morse_translator_logo.png";
     const bio = "Everything you ever wanted from a Morse code translator app! Translate Morse code to  many different languages, including English, Russian, Greek, Japanese, Korean,Hebrew, Arabic, Persian, Number and Punctuation marks! features include: Real time translation - no need for annoying button click every time, Text to Morse Auto detect - no need to select language, Transmit Morse code using sound, flash, device screen brightness & vibration, Text to speech to read translations, Speech to text to dictate words for translation, Real time translation from text to Morse code or vice versa, Save codes for fast future lookup, Share your translations, Customize dot & dash with custom symbols of your choosing.";
     const technologies = "Android studio, Java, Kotlin, Room sqlite, MVVM Architecture, Async, Firebase Crashlytics, CameraX API,  In app purchase";
     const mainImage = "images/galaxy.jpg";
