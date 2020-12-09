@@ -32,11 +32,13 @@
         $(".navbar-collapse").collapse("hide");
     });
 
+
     // Activate scrollspy to add active class to navbar items on scroll
-    $("body").scrollspy({
+   /* $("body").scrollspy({
         target: "#sideNav",
-    });
+    });*/
 })(jQuery); // End of use strict
+
 
 
 /*---------------------JAVA SCRIPT SCROLLSPY----------------------*/
@@ -44,22 +46,48 @@
 (function() {
   'use strict';
 
+
   var section = document.querySelectorAll(".section");
+
   var sections = {};
   var i = 0;
-  var offset = 80;
+  var smallestSection = 100000;
+  var offset = document.querySelector('#sideNav').offsetHeight;
 
-  Array.prototype.forEach.call(section, function(e) {
-    sections[e.id] = e.offsetTop;
-  });
+
+ /* Array.prototype.forEach.call(section, function(e) {
+    //sections[e.id] = e.offsetTop;
+
+  });*/
+
+section.forEach(function(e){
+// sections[e.id] = e.offsetTop;
+ sections[e.id] = e.getBoundingClientRect().y;
+if(e.getBoundingClientRect().height < smallestSection ){
+smallestSection  = e.getBoundingClientRect().height;
+}
+});
+ console.log(smallestSection);
+  console.log(sections);
 
   window.onscroll = function() {
-    var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+  //  var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+    var scrollPosition = window.scrollY + window.innerHeight - smallestSection;
+    
 
     for (i in sections) {
-      if (sections[i] <= scrollPosition+offset) {
-        document.querySelector('.active').setAttribute('class', ' ');
-        document.querySelector('a[href*=' + i + ']').setAttribute('class', 'active');
+/*
+if(sections[i] <= ((window.scrollY + window.innerHeight))){
+ document.querySelector('.active').classList.remove("active");
+ document.querySelector('a[href*=' + i + ']').classList.add("active");
+}*/
+
+      if (sections[i] <= scrollPosition + offset) {
+       // document.querySelector('.active').setAttribute('class', ' ');
+       // document.querySelector('a[href*=' + i + ']').setAttribute('class', 'active');
+
+       document.querySelector('.active').classList.remove("active");
+       document.querySelector('a[href*=' + i + ']').classList.add("active");
       }
     }
   };
@@ -90,6 +118,28 @@ $(document).ready(function(){
   })
   ///////////items filter code/////////////
 
+function setPlatforms(myArr) {
+  
+  var temp, item, a, i;
+  temp = document.getElementsByTagName("template")[0];
+  //get the div element from the template:
+  listitem = temp.content.querySelector("li");
+ // item = temp.content.querySelector("#platform-name");
+  //for each item in the array:
+  document.body.querySelector(".dev-icons").innerHTML = '';
+  for (i = 0; i < myArr.length; i++) {
+    //Create a new node, based on the template:
+    a = document.importNode(listitem, true);
+    //Add data from the array:
+   a.querySelector("#platform-name").textContent = myArr[i];
+   a.querySelector("#platform-image").src = 'images/' + myArr[i] + "_platform.svg";
+    //a.textContent = myArr[i];
+    //append the new node wherever you like:
+  
+    document.body.querySelector(".dev-icons").appendChild(a);  
+}
+}
+
   function showDiveLog(){
     const title = "Dive log";
     const logo = "images/dive_log_logo.png";
@@ -97,6 +147,9 @@ $(document).ready(function(){
     const technologies = "Android studio, Java, Sqlie, Google maps SDK, Location API, Excel with Apache POI, PDF generation, Google drive sdk, Firebase Crashlytics, Camera & images.";
     const mainImage = "images/galaxy.jpg";
     const link = "https://play.google.com/store/apps/details?id=com.david.divelog";
+
+    var myArr = ["android"];
+    setPlatforms(myArr );
 
     showModal(title,bio,link,mainImage,technologies,logo);
   }
@@ -109,6 +162,9 @@ $(document).ready(function(){
     const mainImage = "images/galaxy.jpg";
     const link = "https://play.google.com/store/apps/details?id=com.davidnac.diveplanner";
 
+    var myArr = ["android"];
+    setPlatforms(myArr);
+
     showModal(title,bio,link,mainImage,technologies,logo);
   }
 
@@ -119,6 +175,9 @@ $(document).ready(function(){
     const technologies = "Android studio, Java, Sqlie, Async, Text to speech API, Firebase Crashlytics, Google vision API (text recognition), In app purchase API.";
     const mainImage = "images/galaxy.jpg";
     const link = "https://play.google.com/store/apps/details?id=com.davidnac.ttsreaderfree";
+
+    var myArr = ["android"];
+    setPlatforms(myArr);
 
     showModal(title,bio,link,mainImage,technologies,logo);
   }
@@ -131,16 +190,22 @@ $(document).ready(function(){
     const mainImage = "images/galaxy.jpg";
     const link = "https://play.google.com/store/apps/details?id=com.davidnac.barcodereader";
 
+    var myArr = ["android"];
+    setPlatforms(myArr);
+
     showModal(title,bio,link,mainImage,technologies,logo);
   }
 
   function showMorseTranslator(){
-    const title = "Morse Translator(";
+    const title = "Morse Translator";
     const logo = "images/morse_translator_logo.png";
     const bio = "Everything you ever wanted from a Morse code translator app! Translate Morse code to  many different languages, including English, Russian, Greek, Japanese, Korean,Hebrew, Arabic, Persian, Number and Punctuation marks! features include: Real time translation - no need for annoying button click every time, Text to Morse Auto detect - no need to select language, Transmit Morse code using sound, flash, device screen brightness & vibration, Text to speech to read translations, Speech to text to dictate words for translation, Real time translation from text to Morse code or vice versa, Save codes for fast future lookup, Share your translations, Customize dot & dash with custom symbols of your choosing.";
     const technologies = "Android studio, Java, Kotlin, Room sqlite, MVVM Architecture, Async, Firebase Crashlytics, CameraX API,  In app purchase";
     const mainImage = "images/galaxy.jpg";
     const link = "https://play.google.com/store/apps/details?id=com.david.morsetranslator";
+
+    var myArr = ["android"];
+    setPlatforms(myArr);
 
     showModal(title,bio,link,mainImage,technologies,logo);
   }
@@ -154,6 +219,9 @@ $(document).ready(function(){
     const mainImage = "images/galaxy.jpg";
     const link = "NA";
 
+    var myArr = ["web"];
+    setPlatforms(myArr);
+
     showModal(title,bio,link,mainImage,technologies,logo);
   }
 
@@ -165,6 +233,9 @@ $(document).ready(function(){
     const mainImage = "images/galaxy.jpg";
     const link = "NA";
 
+    var myArr = ["android", "desktop"];
+    setPlatforms(myArr);
+
     showModal(title,bio,link,mainImage,technologies,logo);
   }
 
@@ -174,7 +245,10 @@ $(document).ready(function(){
     const bio = "a social store where you can sell/give and buy many kinds of new or used products such as: clothing, footwear, textile, strollers, toys and more. The application allows you to view products other users have uploaded and contact them easily. Find exactly what you are looking for, using a smart search and advanced filter options.Create a wishlist, and keep track of what you need and get notified when an item you are looking for is uploaded by another user.";
     const technologies = "Sqlite, Firebase: Auth,storage, realtime database ++, Async";
     const mainImage = "images/galaxy.jpg";
-    const link = "https://play.google.com/store/apps/details?id=com.david.mybaby";
+    const link = "https://play.google.com/store/apps/details?id=com.david.mybaby";  
+
+    var myArr = ["android"];
+    setPlatforms(myArr);
 
     showModal(title,bio,link,mainImage,technologies,logo);
   }
@@ -187,6 +261,9 @@ $(document).ready(function(){
     const mainImage = "images/galaxy.jpg";
     const link = "https://apps.apple.com/us/app/buy4baby/id1474004620";
 
+    var myArr = ["iphone"];
+    setPlatforms(myArr);
+
     showModal(title,bio,link,mainImage,technologies,logo);
   }
 
@@ -197,6 +274,9 @@ $(document).ready(function(){
     const technologies = "Sqlite, Firebase: Auth,storage, realtime database ++, Async";
     const mainImage = "images/galaxy.jpg";
     const link = "www.buy4baby.co.il";
+
+    var myArr = ["web"];
+    setPlatforms(myArr);
 
     showModal(title,bio,link,mainImage,technologies,logo);
   }
