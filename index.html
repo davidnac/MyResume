@@ -20,6 +20,8 @@
 
     </head>
     <body id="page-top">
+
+
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
@@ -28,7 +30,7 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger active" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
@@ -40,8 +42,11 @@
             </div>
         </nav>
 
+
+
+
         
-        
+      
           <div class="modal fade" id="appModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
               <div class="modal-content">
@@ -71,13 +76,19 @@
                             <h5>Platforms</h5>
                          </div>
                          <div class="col-8">
-                            <ul class="list-inline dev-icons">
-                                <li class="list-inline-item">
+
+                              <template>
+                               <li class="list-inline-item">
                                     <div class="skill-icons-text">
-                                        <img src="images/android_phone.svg" alt="">
-                                        <p>Android</p>    
+                                        <img id="platform-image" src="images/android_phone.svg" alt="">
+                                        <p id="platform-name">Android</p>    
                                     </div>
                                </li>
+                              </template>
+
+                            <ul class="list-inline dev-icons">
+                            
+                               <!--
                                <li class="list-inline-item">
                                 <div class="skill-icons-text">
                                     <img src="images/iphone.svg" alt="">
@@ -89,7 +100,7 @@
                                 <img src="images/computer.svg" alt="">
                                 <p>Web</p>    
                             </div>
-                        </li>
+                        </li>-->
                            </ul>
                        </div>
                        </div>
@@ -129,7 +140,7 @@
         <!-- Page Content-->
         <div class="container-fluid">
             <!-- About-->
-            <section class="resume-section-top" id="about" data-aos="fade-up" data-aos-duration="500" data-aos-once="true" data-aos-delay="200">
+            <section class="resume-section-top section" id="about" data-aos="fade-up" data-aos-duration="500" data-aos-once="true" data-aos-delay="200">
                 <div class="resume-section-content">
                     <h1 class="mb-0">
                         David
@@ -149,15 +160,17 @@
                     <a href="Programming Resume.pdf" download="cv" class="btn">Download cv</a>
                    
 
+
                 </div>
                 <img src="images/profile.jpg" alt="" class="my-profile-image">
             </section>
             
             <hr class="m-0" />
-            <section class="resume-section" id="portfolio" data-aos="fade-up" data-aos-duration="500" data-aos-once="true" data-aos-delay="200">
+            <section class="resume-section section" id="portfolio" data-aos="fade-up" data-aos-duration="500" data-aos-once="true" data-aos-delay="200">
                 <div class="resume-section-content">
                 <h2 class="mb-5">Portfolio</h2>
                 <p>I have Oever 8 projects on Google play store, with close to to 60,000 downloads, and high ratings</p>
+
                
                 <ul class="list-inline product-filters-btn">
                     <li class="list list-inline-item active" data-filter="All">All</li>
@@ -256,7 +269,7 @@
             </section>
             <hr class="m-0" />
               <!-- Skills-->
-              <section class="resume-section" id="skills" data-aos="fade-up" data-aos-duration="500" data-aos-once="true" data-aos-delay="200">
+              <section class="resume-section section" id="skills" data-aos="fade-up" data-aos-duration="500" data-aos-once="true" data-aos-delay="200">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Skills</h2>
                     <div class="subheading mb-3">Programming Languages, Frameworks & Tools</div>
@@ -466,7 +479,7 @@
             </section>
             <hr class="m-0" />  
             <!-- Experience-->
-            <section class="resume-section" id="experience" data-aos="fade-up" data-aos-duration="500" data-aos-once="true" data-aos-delay="200">
+            <section class="resume-section section" id="experience" data-aos="fade-up" data-aos-duration="500" data-aos-once="true" data-aos-delay="200">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Experience</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
@@ -499,7 +512,7 @@
             </section>
             <hr class="m-0" />
         
-            <section class="resume-section" id="education" data-aos="fade-up" data-aos-duration="500" data-aos-once="true" data-aos-delay="200">
+            <section class="resume-section section" id="education" data-aos="fade-up" data-aos-duration="500" data-aos-once="true" data-aos-delay="200">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Education</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
@@ -517,7 +530,7 @@
           
 
              <!-- Languages-->
-             <section class="resume-section" id="miliray" data-aos="fade-up" data-aos-duration="500" data-aos-once="true" data-aos-delay="200">
+             <section class="resume-section section" id="miliray" data-aos="fade-up" data-aos-duration="500" data-aos-once="true" data-aos-delay="200">
                 <div class="resume-section-content">
                     <h2 class="mb-5">MILITARY SERVICE</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
@@ -534,7 +547,7 @@
             </section>
             <hr class="m-0" />
 
-            <section class="resume-section" id="Languages" data-aos="fade-up" data-aos-duration="500" data-aos-once="true" data-aos-delay="200">
+            <section class="resume-section section" id="Languages" data-aos="fade-up" data-aos-duration="500" data-aos-once="true" data-aos-delay="200">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Languages</h2>
                     <ul>
@@ -546,7 +559,7 @@
             <hr class="m-0" />
 
             <!-- Interests-->
-            <section class="resume-section" id="interests" data-aos="fade-up" data-aos-duration="500" data-aos-once="true" data-aos-delay="200">
+            <section class="resume-section section bottom-page" id="interests" data-aos="fade-up" data-aos-duration="500" data-aos-once="true" data-aos-delay="200">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Interests</h2>
                     <p>Apart from being a web & mobile developer, I enjoy travelling abroad (40 countries and going!), hiking, camping & scuba diving. Also i love training in martial arts, mainly Ninjutsu.</p>
