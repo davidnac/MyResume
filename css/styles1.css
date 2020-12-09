@@ -1,4 +1,12 @@
 
+@font-face {
+  font-family: 'SairaExtraCondensed';
+  src: url('../fonts/SairaExtraCondensed-Regular.ttf');
+}
+
+
+
+
 body {
     margin: 0;
     font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -45,7 +53,7 @@ hr {
   }
 
   .subheading {
-    font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: 'SairaExtraCondensed';
     text-transform: uppercase;
     font-weight: 500;
     font-size: 1.5rem;
@@ -77,6 +85,9 @@ hr {
   }
 
  
+.bottom-page{
+margin-bottom: 50px;
+}
 
   .justify-content-between {
     justify-content: space-between !important;
@@ -480,7 +491,8 @@ h1, .h1 {
   }
 
   .header-container img{
-    width: 60px;
+    width: 70px;
+    height: 70px;
   }
 
   .row-padding img{
@@ -498,9 +510,6 @@ h1, .h1 {
 /*-----------JAVASCRIPT SCROLL SPY----------------------*/
 
 .active {
-  font-size: 14px;
-  color: #fff;
-  text-decoration: none;
-  line-height: 50px;
+ coloe: white;
 }
 
